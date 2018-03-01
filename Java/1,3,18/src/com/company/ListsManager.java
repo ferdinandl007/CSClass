@@ -81,8 +81,10 @@ package com.company;
          * valid position in the highPriority list.)
          */
         public void promote(int index) {
-
-
+            if (index >= 1){
+                highPriority.add(0,highPriority.get(index));
+                highPriority.remove(index + 1);
+            }
         }
     }
 
