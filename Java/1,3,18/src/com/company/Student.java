@@ -1,19 +1,20 @@
 package com.company;
-
+import java.util.ArrayList;
 public class Student {
 
 
     private int number;
     private String name;
     private String course;
-    private Module[] studying;
+    private ArrayList<Module> studying;
     private int numModules;
 
     public Student(String sName, int number) {
         name = sName;
         this.number = number;
-        studying = new Module[5];
-        numModules=0;
+
+        studying = new ArrayList<>();
+        numModules = 0;
     }
 
     public void changeCourse(String nCourse) {
@@ -29,30 +30,25 @@ public class Student {
     }
 
     public void addModule(Module m) {
-        studying[numModules] =m;
-        numModules++;
-    }
+        studying.add(m);
     /* @pre: 0 <= pos && pos < numStudying
 
   @post student now not studying module at position pos in
       their programme
  */
-    public void deleteModule(int pos) {
-        int i = pos;
-        while (i<numModules-1) {
-            studying[i] = studying[i+1]; // copy down
-            i++;
-        } // i == numStudying-1
-        numModules--; // one less now
     }
-
-
-    public void displayModules() {
-        for (int i = 0; i<numModules; i++){
-            System.out.println("Module " + studying[i].getName());
+        public void deleteModule ( int pos){
+            studying.remove(pos);
         }
 
-    }
+
+        public void displayModules () {
+            for (int i = 0; i < numModules; i++) {
+                System.out.println("Module " + studying.get(i).getName());
+            }
+
+        }
+
 
 
 }

@@ -1,5 +1,6 @@
 package com.company;
-
+import java.util.ArrayList;
+import java.util.Scanner;
 public class CourseManag {
 
     public static void main(String[] args) {
@@ -18,6 +19,24 @@ public class CourseManag {
         s.deleteModule(0);
         System.out.println(s.getName()+ "is taking: ");
         s.displayModules();
+        fffk();
+
+
+    }
+
+    static void fffk(){
+        Scanner kb = new Scanner(System.in);
+        ArrayList<String> myString = new ArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            System.out.println("Enter width");
+            String str = kb.nextLine();
+            myString.add(str);
+
+        }
+
+        System.out.println(myString.get(1));
+
+
 
 
     }
