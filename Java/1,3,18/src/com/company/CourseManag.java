@@ -36,9 +36,14 @@ public class CourseManag {
 
         System.out.println(myString.get(1));
 
-
-
+        System.out.println("______________________");
+        for (String s : myString) {
+            System.out.println(s);
+        }
 
     }
+
+
+
 
 }

@@ -60,11 +60,10 @@ package com.company;
          */
         public void changePriority(boolean important, int index) {
             if (important){
-                lowPriority.add(highPriority.get(index));
-                highPriority.remove(index);
+                lowPriority.add(highPriority.remove(index));
             } else {
-                highPriority.add(lowPriority.get(index));
-                lowPriority.remove(index);
+                highPriority.add(lowPriority.remove(index));
+
             }
         }
 
@@ -82,8 +81,7 @@ package com.company;
          */
         public void promote(int index) {
             if (index >= 1){
-                highPriority.add(0,highPriority.get(index));
-                highPriority.remove(index + 1);
+                highPriority.add(0,highPriority.remove(index));
             }
         }
     }
