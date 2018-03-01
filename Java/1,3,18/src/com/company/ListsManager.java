@@ -17,16 +17,15 @@ package com.company;
 
         /* Initialises both lists, to initially be empty. */
         public void initialiseLists() {
-
-
+            highPriority = new ArrayList<>();
+            lowPriority = new ArrayList<>();
         }
 
 
         /* Adds the given task to the end of the low-priority list.
          */
         public void addTask(String task) {
-
-
+            lowPriority.add(task);
         }
 
         /* Removes the given task to the end of the high-priority list.
@@ -35,6 +34,8 @@ package com.company;
          * valid position in the relevant list.)
          */
         public void removeLowPriorityTask(int index) {
+
+           lowPriority.remove(index);
 
 
         }
@@ -46,8 +47,7 @@ package com.company;
          * valid position in the relevant list.)
          */
         public void removeHighPriorityTask(int index) {
-
-
+            highPriority.remove(index);
         }
 
         /* Changes the priority of the given task.
@@ -59,8 +59,13 @@ package com.company;
          * valid position in the relevant list.)
          */
         public void changePriority(boolean important, int index) {
-
-
+            if (important){
+                lowPriority.add(highPriority.get(index));
+                highPriority.remove(index);
+            } else {
+                highPriority.add(lowPriority.get(index));
+                lowPriority.remove(index);
+            }
         }
 
         /* Produces a string that can be used to save the task lists. */
