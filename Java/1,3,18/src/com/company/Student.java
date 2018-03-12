@@ -46,7 +46,7 @@ public class Student {
             for (int i = 0; i < numModules; i++) {
                 System.out.println("Module " + studying.get(i).getName());
             }
-            
+
 
         }
 
