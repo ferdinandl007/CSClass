@@ -1,8 +1,11 @@
 package com.company;
 
 
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class Main {
     private ArrayList<Room> rooms = new ArrayList<>();
     Scanner input = new Scanner(System.in);
@@ -10,10 +13,8 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
 
-
-
-
-
+    Main instance = new Main();
+    instance.menu();
 
 
     }
@@ -22,23 +23,26 @@ public class Main {
     void menu(){
         System.out.println("menu enter  number go  to opschen -> 1 add rooms -> 2 display -> display all the rooms with projectors 3 ->  given a number of attendees and get rooms 4->");
         int num = input.nextInt();
-        boolean boo = true;
-        while (boo)
+
         switch(num){
             case 1:
                 addRome();
+                menu();
                 break;
             case 2 :
                 display();
+                menu();
                 break;
             case 3:
                 pordisplay();
+                menu();
                 break;
             case 4:
                 numDisplay();
+                menu();
                 break;
             default:
-                boo = false;
+                break;
         }
     }
 
@@ -72,10 +76,11 @@ public class Main {
                     String os = input.next();
                     System.out.println("Rome number");
                     String um = input.next();
-                    System.out.println("projeto yes / no");
+                    System.out.println("projeto true / false");
                     boolean pro = input.nextBoolean();
                     rooms.add(new ComputerLab(um,pro,os));
                     break;
+
 
             }
 
@@ -84,17 +89,32 @@ public class Main {
 
     }
     void display(){
-        for ( int i=0; i<rooms.size(); i++) {
-            System.out.println(rooms.get(i).getRoomNumber());
-            System.out.println(rooms.get(i).getCapacity());
-            System.out.println(rooms.get(i).hasProjector());
+
+
+        for (Room r: rooms) {
+            System.out.println("----------------------------------------");
+            if(r instanceof Office) {
+                System.out.println("Officeholder ->"+ (((Office) r)).getAttribute());
+                //do something
+            }
+            System.out.println( "Rome Number ->" + r.getRoomNumber());
+            System.out.println("Capacity ->" + r.getCapacity());
+            System.out.println("has Projector  ->" + r.hasProjector());
+            System.out.println("----------------------------------------");
+
+
         }
     }
 
     void pordisplay(){
-        for ( int i=0; i<rooms.size(); i++) {
-            if (rooms.get(i).hasProjector()){
-               System.out.println(rooms.get(i).getRoomNumber());
+
+        for (Room r: rooms) {
+            if (r.hasProjector()){
+                System.out.println("----------------------------------------");
+                System.out.println("Rome Number " + r.getRoomNumber());
+                System.out.println("Capacity " + r.getCapacity());
+                System.out.println("----------------------------------------");
+
             }
         }
     }
@@ -103,9 +123,12 @@ public class Main {
 
         System.out.println("Capacity");
         int num = input.nextInt();
-        for ( int i=0; i<rooms.size(); i++) {
-            if (rooms.get(i).getCapacity() >= num ){
-                System.out.println(rooms.get(i).getRoomNumber());
+        for (Room r: rooms) {
+            if (r.getCapacity() >= num ){
+                System.out.println("----------------------------------------");
+                System.out.println(r.getRoomNumber());
+                System.out.println(r.getCapacity());
+                System.out.println("----------------------------------------");
             }
         }
 
