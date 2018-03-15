@@ -17,5 +17,5 @@ public class Ingredient implements Ingredients {
 
     public double getPrice(){
         return this.price;
-   }
+    }
 }
