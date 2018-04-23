@@ -23,7 +23,7 @@ public class TestGame {
         game.makeCellLive(10, 11);
         game.makeCellLive(10, 12);
         //move through one generation
-        game.newGeneration();
+       // game.newGeneration();
         Point2D[] newCells = game.getLiveCells();
         Point2D[] expected = {new Point2D(9,11),new Point2D(10,11),new Point2D(11,11)};
         //check that the horizontal blinker has turned into a vertical one

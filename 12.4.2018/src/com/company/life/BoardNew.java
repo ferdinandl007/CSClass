@@ -20,6 +20,7 @@ public class BoardNew {
         this.width = width;
         this.height = height;
         cells = new ArrayList<>();
+
     }
 
     public void clear() {
@@ -27,7 +28,8 @@ public class BoardNew {
     }
 
     public boolean getCell(int x, int y) {
-        return cells.contains(new Point2D(x, y));
+         cells.contains(new Point2D(x, y));
+         return false;
     }
 
     public void makeCellLive(int x, int y) {

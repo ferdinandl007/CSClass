@@ -32,6 +32,7 @@ public class Game {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
                 int nl = getNbrLivingNeighbours(x, y);
+                System.out.println(nl);
                 if (oldBoard.getCell(x, y) && (nl == 2 || nl == 3)) {
                     currentBoard.makeCellLive(x, y);
                 }

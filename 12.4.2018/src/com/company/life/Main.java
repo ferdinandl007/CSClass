@@ -29,17 +29,56 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {        
         Game game = new Game(70,70);
         readFromFile(game, "cells.txt");
-        Display display = new Display(game, 10,100);
+        Display display = new Display(game, 20,100);
         display.start();
     }
     
     public static void readFromFile(Game game, String file) throws FileNotFoundException {
         FileInputStream fileIn = new FileInputStream(file);
         Scanner scan = new Scanner(fileIn);
-        while(scan.hasNextInt()) {
-            int x = scan.nextInt();
-            int y = scan.nextInt();
-            game.makeCellLive(x, y);
+        while(scan.hasNext()) {
+            int x , y;
+            if (scan.hasNext("Glider")){
+                scan.next();
+                x = scan.nextInt();
+                y = scan.nextInt();
+
+                game.makeCellLive(x,y);
+                game.makeCellLive(x + 1,y);
+                game.makeCellLive(x + 2 ,y);
+                game.makeCellLive(x ,y + 1);
+                game.makeCellLive(x + 1,y + 2);
+
+            } else if (scan.hasNext("LWSpaceShip")){
+                scan.next();
+                x = scan.nextInt();
+                y = scan.nextInt();
+
+
+                game.makeCellLive(x + 1,y);
+                game.makeCellLive(x + 4,y);
+                game.makeCellLive(x,y + 1);
+                game.makeCellLive(x,y + 2);
+                game.makeCellLive(x + 4,y + 2);
+                game.makeCellLive(x ,y + 3);
+                game.makeCellLive(x + 1 ,y + 3);
+                game.makeCellLive(x + 2 ,y + 3);
+                game.makeCellLive(x + 3 ,y + 3);
+
+            } else if (scan.hasNext("Blinker")){
+                scan.next();
+                x = scan.nextInt();
+                y = scan.nextInt();
+
+                game.makeCellLive(x ,y);
+                game.makeCellLive(x + 1 ,y);
+                game.makeCellLive(x + 2 ,y);
+
+            } else {
+                x = scan.nextInt();
+                y = scan.nextInt();
+            }
+
         }
     }
 }
