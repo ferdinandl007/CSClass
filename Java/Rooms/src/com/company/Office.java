@@ -19,6 +19,7 @@ public class Office extends Room {
     public int getCapacity() {
         return capacity;
 
+
     }
 
     public String getAttribute() {
