@@ -92,7 +92,7 @@ public class SupporterDatabaseBST implements ISupporterDatabase {
 
 
 
-    int maxDepth(SearchTree node){
+    private int maxDepth(SearchTree node){
         if (node == null)return 0;
 
         int lDepth = maxDepth(node.getLeft());
@@ -102,7 +102,7 @@ public class SupporterDatabaseBST implements ISupporterDatabase {
     }
 
 
-    public static void printBinaryTree(SearchTree root, int level){
+    private static void printBinaryTree(SearchTree root, int level){
         if(root==null)
             return;
         printBinaryTree(root.right, level+1);
@@ -203,12 +203,12 @@ public class SupporterDatabaseBST implements ISupporterDatabase {
 
         if (key.compareTo(tree.getData().getName())<0){
              tree.setLeft(removeSupporter(tree.left,key));
-            System.out.println("if 1");
+
         } else if (key.compareTo(tree.getData().getName())>0){
              tree.setRight(removeSupporter(tree.right,key));
-            System.out.println("if 2");
+
         } else {
-            System.out.println("else 1");
+
             if (tree.getLeft() == null){
                 return tree.getRight();
             } else if (tree.getRight() == null) {
@@ -224,7 +224,7 @@ public class SupporterDatabaseBST implements ISupporterDatabase {
     }
 
 
-    Supporter minSupporter(SearchTree root){
+    private Supporter minSupporter(SearchTree root){
         Supporter supporter = root.getData();
         while (root.getLeft() != null){
             supporter = root.left.getData();

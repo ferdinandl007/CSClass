@@ -15,7 +15,7 @@ public class SupporterDatabaseHT implements ISupporterDatabase {
 
     public SupporterDatabaseHT(String name){
         // create array of HashEntry, predefined size
-        this.tableSize =9;
+        this.tableSize =3;
         System.out.println("size of hash table --> " + size());
         this.name = name;
         table = new Supporter[size()];
@@ -60,6 +60,9 @@ public class SupporterDatabaseHT implements ISupporterDatabase {
             }
             i = (i + h * h++) % size();
             //System.out.println("i "+ i);
+            if(h > size() * 4){
+                makeNewtable();
+            }
         }
         System.out.println("value not found in hash table");
         return null;
@@ -90,6 +93,8 @@ public class SupporterDatabaseHT implements ISupporterDatabase {
         for (int i = 0; i < tepTable.length; i++){
             if (tepTable[i] != null && !lazyDeletion[i]){
                 put(tepTable[i]);
+            } else if (lazyDeletion[i]){
+                System.out.println("--------------------------------------------------------------> Deleted name was excluded from new table." + tepTable[i].getName());
             }
         }
         lazyDeletion = new Boolean[size()];
@@ -127,6 +132,10 @@ public class SupporterDatabaseHT implements ISupporterDatabase {
             }
             i = (i + x * x++) % size();
             System.out.print(i +", ");
+
+            if(x > size() * 4){
+                makeNewtable();
+            }
         } while (i != tmp);
         return null;
     }

@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-668">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="437">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,11 +27,11 @@
       <file leaf-file-name="SupporterDatabaseHT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/SupporterDatabaseHT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+            <state relative-caret-position="-797">
+              <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4348#4359#0" expanded="true" />
+                <element signature="e#4464#4475#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,8 +49,8 @@
       <file leaf-file-name="SupporterDatabaseBST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/SupporterDatabaseBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1693">
-              <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+            <state relative-caret-position="98">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +81,10 @@
         <option value="$PROJECT_DIR$/src/com/company/ISupporterDatabase.java" />
         <option value="$PROJECT_DIR$/src/com/company/Supporter.java" />
         <option value="$PROJECT_DIR$/src/com/company/StringQuickSort.java" />
-        <option value="$PROJECT_DIR$/src/com/company/SupporterDatabaseBST.java" />
         <option value="$PROJECT_DIR$/src/com/company/Solution.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/SupporterDatabaseHT.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SupporterDatabaseBST.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -98,16 +98,42 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
-    <option name="y" value="-1043" />
-    <option name="width" value="1594" />
-    <option name="height" value="964" />
+    <option name="x" value="-25" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name=" Data structures and algorithms Coursework one" type="b2602c69:ProjectViewProjectNode" />
+              <item name=" Data structures and algorithms Coursework one" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name=" Data structures and algorithms Coursework one" type="b2602c69:ProjectViewProjectNode" />
+              <item name=" Data structures and algorithms Coursework one" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name=" Data structures and algorithms Coursework one" type="b2602c69:ProjectViewProjectNode" />
+              <item name=" Data structures and algorithms Coursework one" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -212,32 +238,36 @@
       <workItem from="1542207552289" duration="240000" />
       <workItem from="1542308279135" duration="2536000" />
       <workItem from="1542476269930" duration="1350000" />
-      <workItem from="1542648018311" duration="7438000" />
+      <workItem from="1542648018311" duration="8900000" />
+      <workItem from="1542800639871" duration="157000" />
+      <workItem from="1542800923743" duration="37000" />
+      <workItem from="1542801665139" duration="359000" />
+      <workItem from="1542969328098" duration="2824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88936000" />
+    <option name="totallyTimeSpent" value="93775000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="-1043" width="1594" height="964" extended-state="0" />
+    <frame x="-25" y="23" width="1680" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49609375" weight="0.07799443" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49609375" weight="0.077011496" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.08913309" side_tool="true" weight="0.32923076" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.9108669" visible="true" weight="0.38523644" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.9108669" visible="true" weight="0.23705408" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.015873017" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -259,28 +289,28 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.9108669" visible="true" weight="0.32923076" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.0" />
       <window_info id="Structure" order="6" side_tool="true" visible="true" weight="0.015873017" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.08913309" side_tool="true" visible="true" weight="0.32923076" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49609375" weight="0.32909092" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.0" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,16 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/SupporterDatabaseBST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1693">
-          <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ISupporterDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -652,19 +672,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/SupporterDatabaseHT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+        <state relative-caret-position="-797">
+          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4348#4359#0" expanded="true" />
+            <element signature="e#4464#4475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SupporterDatabaseBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="437">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

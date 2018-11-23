@@ -15,28 +15,30 @@ public class Main {
 
     private static void test(){
 
-        SupporterDatabaseHT tabel = new SupporterDatabaseHT("1");
-        //SupporterDatabaseBST tabel = new SupporterDatabaseBST();
+        //SupporterDatabaseHT tabel = new SupporterDatabaseHT("1");
+        SupporterDatabaseBST tabel = new SupporterDatabaseBST();
 
-        for (int i = 0; i < 12  ; i++){
+
+
+        for (int i = 0; i < 5  ; i++){
             Supporter supporter = new Supporter(UUID.randomUUID().toString(),lastNamer[i]);
 
             tabel.put(supporter);
 
-            if (i == 5){
-                tabel.remove("Thompson");
-                tabel.remove("Ory");
-            }
 
         }
+
+
+
         tabel.printSupportersOrdered();
+        System.out.println("\n \n \n \n");
+        tabel.remove("Ory");
+        tabel.remove("Eastman");
+        tabel.remove("Anderson");
         System.out.println("\n \n \n \n");
         tabel.printSupportersOrdered();
 
-
-
-
-        for (int i = 0; i < 12; i++){
+        for (int i = 0; i < 5; i++){
 
             Supporter r = tabel.get(lastNamer[i]);
             if (r != null){
